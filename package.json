@@ -46,14 +46,14 @@
     "vue-loader": "^15.7.2",
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
-    "cssnano": '^4.1.10'
+    "webpack-cli": "^3.3.10"
   },
   "browserslist": [
     "iOS >= 7",
     "Android >= 4"
   ],
   "dependencies": {
+    "cssnano": "^4.1.10",
     "x-photoswipe": "^4.1.3-rc.1"
   }
 }
