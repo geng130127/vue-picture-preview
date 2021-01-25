@@ -20,7 +20,7 @@
         <div class="pswp__item"></div>
       </div>
       <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-      <div class="pswp__ui pswp__ui--hidden">
+      <div class="pswp__ui pswp__ui--hidden box">
         <div class="pswp__top-bar">
           <!--  Controls are self-explanatory. Order can be changed. -->
           <div class="pswp__counter"></div>
