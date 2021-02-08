@@ -81,6 +81,11 @@ import 'x-photoswipe/dist/default-skin/default-skin.css';
 
 export default {
   name: 'previewer',
+  data(){
+    return {
+      flag: true
+    }
+  },
   computed: {
     imgs() {
       return this.list.map((one) => {
