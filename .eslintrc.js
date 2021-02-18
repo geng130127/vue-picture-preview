@@ -19,6 +19,7 @@ module.exports = {
         "max": 1,
         "allowFirstLine": false
       }
-    }]
+    }],
+    "vue/no-v-html": "off"
   }
 };
