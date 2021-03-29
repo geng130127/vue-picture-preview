@@ -50,7 +50,7 @@ export function formatTime(time, option) {
     if (('' + time).length === 10) {
         time = parseInt(time) * 1000
     } else {
-        time = +time
+        time = + time
     }
     const d = new Date(time)
     const now = Date.now()
