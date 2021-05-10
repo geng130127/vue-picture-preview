@@ -4,7 +4,7 @@
  * @param {string} cFormat
  * @returns {string | null}
  */
-export function parseTime(time, cFormat) {
+const parseTime = function (time, cFormat) {
     if (arguments.length === 0) {
         return null
     }
@@ -46,7 +46,7 @@ export function parseTime(time, cFormat) {
  * @param {string} option
  * @returns {string}
  */
-export function formatTime(time, option) {
+const formatTime = function(time, option) {
     if (('' + time).length === 10) {
         time = parseInt(time) * 1000
     } else {
@@ -116,4 +116,24 @@ const debounce = function(func, wait, immediate = false) {
 
         return result
     }
+}
+
+const deepCopy = function(source, target) {
+    const c = target || {}
+    for (const item in source) {
+        if (typeof source[item] === 'object') {
+            c[item] = (source[item].constructor === Array) ? [] : {}
+            deepCopy(source[item], c[item])
+        } else {
+            c[item] = source[item]
+        }
+    }
+    return c
+}
+
+export {
+    parseTime,
+    formatTime,
+    debounce,
+    deepCopy
 }
