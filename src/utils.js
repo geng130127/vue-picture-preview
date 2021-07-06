@@ -131,9 +131,20 @@ const deepCopy = function(source, target) {
     return c
 }
 
+/**
+ * 设置cookie
+ * @param name cookie名称
+ * @param value cookie值
+ * @param expires cookie过期时间
+ */
+const setCookie = function(name, value, expires = 1) {
+    return Cookies.set(name, value, { expires: expires })
+}
+
 export {
     parseTime,
     formatTime,
     debounce,
-    deepCopy
+    deepCopy,
+    setCookie
 }
