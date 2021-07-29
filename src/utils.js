@@ -119,7 +119,7 @@ const debounce = function(func, wait, immediate = false) {
 }
 
 const deepCopy = function(source, target) {
-    const c = target || {}
+    const resut = target || {}
     for (const item in source) {
         if (typeof source[item] === 'object') {
             c[item] = (source[item].constructor === Array) ? [] : {}
@@ -128,7 +128,7 @@ const deepCopy = function(source, target) {
             c[item] = source[item]
         }
     }
-    return c
+    return resut
 }
 
 /**
