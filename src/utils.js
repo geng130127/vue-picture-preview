@@ -141,10 +141,15 @@ const setCookie = function(name, value, expires = 1) {
     return Cookies.set(name, value, { expires: expires })
 }
 
+const getCookie = function () {
+
+}
+
 export {
     parseTime,
     formatTime,
     debounce,
     deepCopy,
-    setCookie
+    setCookie,
+    getCookie,
 }
