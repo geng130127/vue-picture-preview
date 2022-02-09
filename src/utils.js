@@ -142,7 +142,7 @@ const setCookie = function(name, value, expires = 1) {
 }
 
 const getCookie = function () {
-
+    console.log('TEST');
 }
 
 export {
