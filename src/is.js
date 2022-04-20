@@ -6,3 +6,7 @@ export function is(val, type) {
 export function isDef(val) {
     return typeof val !== 'undefined';
 }
+
+export function isUnDef(val) {
+    return !isDef(val);
+}
