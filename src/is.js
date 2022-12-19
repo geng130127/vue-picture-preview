@@ -10,3 +10,7 @@ export function isDef(val) {
 export function isUnDef(val) {
     return !isDef(val);
 }
+
+export function isObject(val) {
+    return val !== null && is(val, 'Object');
+}
