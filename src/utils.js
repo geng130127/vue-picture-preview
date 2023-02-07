@@ -128,6 +128,8 @@ const deepCopy = function(source, target) {
             c[item] = source[item]
         }
     }
+    // eslint-disable-next-line no-console
+    console.log(resut);
     return resut
 }
 
